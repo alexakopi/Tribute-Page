@@ -1,0 +1,75 @@
+body{
+    background-color: #16161630;
+}
+#main{
+    padding: 50px 0;
+    display: grid;
+    grid-row-gap: 50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "header"
+        "main";
+    font-family: 'Coda',Arial;
+  
+}
+#head{
+  text-align: center;
+}
+#caption{
+  padding: 10px 0;
+  font-size: 20px;
+}
+#head h1{
+  font-size: 35px;
+  font-weight: 400;
+  font-family: 'Playfair Display SC',Arial;
+  text-transform: uppercase;
+}
+#img-div{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  background-color: #2f3f5030;
+}
+#img-div p{
+  flex-basis: 100%;
+}
+#img-caption{
+  font-family: 'Special Elite';
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+#tribute-info{
+  display: grid;
+  grid-template-columns: 1fr 740px 1fr;
+  grid-template-rows: auto;
+  grid-row-gap: 30px;
+  grid-template-areas:
+        "topLeft topCenter topRight"
+        "left center right"
+        "bottomLeft bottomCenter bottomRight";
+}
+#tribute-info h3{
+  grid-area: topCenter;
+  font-size: 25px;
+  font-family: 'Playfair Display SC';
+  text-align: center;
+}
+#tribute-info ul{
+  grid-area: center;
+  list-style-type: circle;
+  padding-left: 30px;
+}
+#tribute-info ul li{
+  padding: 5px 0;
+}
+#tribute-info ul li strong{
+  font-weight: 600;
+  margin-right: 5px;
+}
+#tribute-info a{
+  grid-area: bottomCenter;
+}
